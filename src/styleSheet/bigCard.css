@@ -1,0 +1,266 @@
+/* .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    background-color: rgb(238, 247, 253);
+    gap: 10px;
+} */
+
+.card_box {
+    /* flex: 1; */
+    flex-grow: 1;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 10px auto 0px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+    box-shadow: 5px 5px 10px rgba(197, 195, 195, 0.163), -5px -5px 5px 5px rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(211, 211, 211, 0.403);
+}
+
+.card_box:hover {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid #de5050; */
+    /* transform: scale(1.01); */
+}
+
+.card_box h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.card_box .card {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.card_box .card:hover {
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    transform: scale(1.01);
+}
+
+.card_box .card .card_image {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    /* background-color: rgb(218, 217, 216); */
+}
+
+.card_box .card .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card_box .card .card_image img:hover {
+    opacity: 0.8;
+}
+
+.card_box .card .card_description {
+    width: 100%;
+    height: fit-content;
+    /* background-color: #f5f5f5; */
+}
+
+.card_box .card .card_description h2 {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-align: start;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    margin: 10px auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* .card_box .card .card_description h2 span {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px auto;
+    display: none;
+} */
+.ratings_container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 10px;
+    height: fit-content;
+}
+
+/* .ratings_stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1rem;
+    color: goldenrod;
+    font-weight: 500;
+    margin-right: 10px;
+} */
+.bigCard_likeBtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 6px;
+    border: 1px solid lightgrey;
+}
+
+.card_box .card .card_description .card_price {
+    /* background-color: #333; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.card_box .card .card_description .card_price .save_money {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: green;
+    /* margin: 0 auto; */
+    flex-grow: 1;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 5px;
+    /* background-color: #333; */
+}
+
+.card_box .card .card_description .card_price button {
+    color: lightgray;
+    background-color: #fff;
+    border: 1px solid gray;
+    /* padding: 5px; */
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card_box .card .card_description .card_price button:hover {
+    color: #de5050;
+    border: 1px solid #de5050;
+}
+
+.card_box .card .card_description .card_price .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #de5050;
+}
+
+.card_box .card .card_description .description {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f5f5f58f;
+    /* background-color: lightgray; */
+    color: gray;
+    /* background-color: #e5e5e5; */
+    margin: 0 0 10px;
+    font-size: small;
+    /* color: #e5e5e5; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_box .card .card_buttons {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card_box .card .card_buttons button {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.card_box .card .card_buttons button:last-child {
+    background-color: #f95b5b;
+    border: 2px solid #f95b5b;
+    font-weight: 600;
+    /* color: #333; */
+}
+
+.card_box .card .card_buttons button:last-child:hover {
+    background-color: #de5050;
+    border: 2px solid #de5050;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+    transform: scale(1.015);
+}
+
+/* .card_box .card .card_buttons button:nth-child(2) {
+    background-color: #f95b5b00;
+    border: 2px solid lightgray;
+    color: gray;
+    transition: color 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+} */
+
+.card_box .card .card_buttons button:first-child {
+    background-color: #fff;
+    border: 2px solid lightgray;
+    /* border-radius: 40%; */
+    color: gray;
+    transition: color 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_box .card .card_buttons button:first-child:hover {
+    background-color: #000;
+    border: 2px solid #000;
+    color: lightgray;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+    /* border: none; */
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f95b5b7f;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: smaller;
+}
